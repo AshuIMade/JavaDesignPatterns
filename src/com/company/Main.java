@@ -9,6 +9,6 @@ public class Main {
 	// write your code here
         System.out.println("Main caller ...");
         //CallCreationalRunners.callBuilders ();
-        RunStructuralDps.callBridge();
+        RunStructuralDps.callComposites();
     }
 }
