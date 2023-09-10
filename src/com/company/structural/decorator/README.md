@@ -7,3 +7,5 @@ Generally we have two option
 ## decorator Types 
 * String Decorator
 * Dynamic Decorator
+* static decorator
+* adapter decorator

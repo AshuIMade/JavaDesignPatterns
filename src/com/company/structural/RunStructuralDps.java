@@ -4,6 +4,9 @@ import com.company.structural.adapter.RunAdapters;
 import com.company.structural.bridge.RunBridge;
 import com.company.structural.composite.RunComposites;
 import com.company.structural.decorator.RunDecorators;
+import com.company.structural.facade.RunFaced;
+import com.company.structural.flyWeight.RunFlyWeight;
+import com.company.structural.proxy.RunProxy;
 
 public class RunStructuralDps {
     public static void callAdapters(){
@@ -24,5 +27,16 @@ public class RunStructuralDps {
         //RunDecorators.demoStringDecorator();
         //RunDecorators.demoDynamicDecorator();
         RunDecorators.demoAdapterDecorator();
+    }
+    public static void callFaced(){
+        RunFaced.demoFaced();
+    }
+    public static void callFormatedText(){
+        RunFlyWeight.demoFormatedText();
+    }
+    public static void callProxy(){
+        //RunProxy.demoProtectionProxy();
+        RunProxy.demoPropertyProxy();
+        RunProxy.demoDynamicProxy();
     }
 }
