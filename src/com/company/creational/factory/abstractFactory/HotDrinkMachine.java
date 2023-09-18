@@ -10,6 +10,7 @@ public class HotDrinkMachine {
         //new Reflections("").getSubTypes
         //other things..........
         //create instances..........
+        //Set<Class<? extends IHotDrinkFactory>> types= new Reflections(" ").getS
     }
     public IHotDrink makeDrink(){
         //lots of impl
