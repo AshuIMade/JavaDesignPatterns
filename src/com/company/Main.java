@@ -1,5 +1,6 @@
 package com.company;
 
+import com.company.behavioural.CallBehavioralRunners;
 import com.company.creational.CallCreationalRunners;
 import com.company.structural.RunStructuralDps;
 
@@ -10,6 +11,7 @@ public class Main {
         System.out.println("Main caller ...");
         //CallCreationalRunners.callBuilders ();
         //RunStructuralDps.callFaced();
-        RunStructuralDps.callProxy();
+        //RunStructuralDps.callProxy();
+        CallBehavioralRunners.runBehaviouralPatterns();
     }
 }
