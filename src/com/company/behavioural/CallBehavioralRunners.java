@@ -10,6 +10,9 @@ import com.company.behavioural.observer.RunObserver;
 import com.company.behavioural.state.RunState;
 import com.company.behavioural.strategy.RunStrategy;
 import com.company.behavioural.templatemethod.RunTemplateMethod;
+import com.company.behavioural.visitors.RunVisitors;
+
+import java.util.function.DoubleUnaryOperator;
 
 public class CallBehavioralRunners {
     public static void runBehaviouralPatterns(){
@@ -21,8 +24,12 @@ public class CallBehavioralRunners {
        //RunMemento.demoMemento();
         //RunNullObject.demoNullObject();
         //RunState.demoState();
-        RunStrategy.demoStrategy();
-        RunStrategy.demoStaticStrategy();
-        RunTemplateMethod.demoTemplateMethod();
+        //RunStrategy.demoStrategy();
+        //RunStrategy.demoStaticStrategy();
+        //RunTemplateMethod.demoTemplateMethod();
+        RunVisitors.demoIntrusiveVisitors();
+        RunVisitors.demoReflectiveVisitors();
+        RunVisitors.demoClassicVisitor();
+        RunVisitors.demoAsyclicVisitor();
     }
 }
