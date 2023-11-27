@@ -1,5 +1,10 @@
 package com.company.SOLIDdesignPrinciples;
 
+import com.company.SOLIDdesignPrinciples.dip.Person;
+import com.company.SOLIDdesignPrinciples.dip.Relationships;
+import com.company.SOLIDdesignPrinciples.dip.Research;
+import com.company.SOLIDdesignPrinciples.isp.Document;
+import com.company.SOLIDdesignPrinciples.isp.PhotoCopier;
 import com.company.SOLIDdesignPrinciples.lsp.Rectangle;
 import com.company.SOLIDdesignPrinciples.lsp.Square;
 import com.company.SOLIDdesignPrinciples.ocp.*;
@@ -48,7 +53,26 @@ public class RunSolid {
         useIt(r);
         useIt(sq);
     }
-    public static void demoIsp(){}
+    public static void demoIsp(){
+        PhotoCopier photoCopier= new PhotoCopier();
+        photoCopier.print(new Document());
+        photoCopier.scan(new Document());
+
+
+
+
+    }
+    public static void demoDip(){
+        Person jhon = new Person("Jhon");
+        Person child1 = new Person("Chris");
+        Person child2 = new Person("Matt");
+        Relationships relationships=new Relationships();
+        relationships.addParentAndChild(jhon,child1);
+        relationships.addParentAndChild(jhon,child2);
+        new Research(relationships);
+
+
+    }
     public static void useIt(Rectangle r){
         int width= r.getWidth();
         r.setHeight(10);

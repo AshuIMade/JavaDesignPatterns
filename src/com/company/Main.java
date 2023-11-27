@@ -1,9 +1,6 @@
 package com.company;
 
 import com.company.SOLIDdesignPrinciples.RunSolid;
-import com.company.behavioural.CallBehavioralRunners;
-import com.company.creational.CallCreationalRunners;
-import com.company.structural.RunStructuralDps;
 
 public class Main {
 
@@ -17,6 +14,8 @@ public class Main {
         }
         RunSolid.demoOcp();
         RunSolid.demoLsp();
+        RunSolid.demoIsp();
+        RunSolid.demoDip();
         //CallCreationalRunners.callBuilders ();
         //RunStructuralDps.callFaced();
         //RunStructuralDps.callProxy();
